@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/CqD5kvh.png">
+    <title>Landing Page H</title>
+</head>
+<body>
+
+    <section class="sec">
+        
+           <header>
+            <a href="#"><img src="https://i.imgur.com/a3CyJga.png" width class="logo" onclick="imgSlider('https://i.imgur.com/BBHsHLK.png') , changeBgColor('#0062be') "></a>
+              <ul>
+                <li><a href="#">Nascimento</a></li>
+                <li><a href="#">Família</a></li>
+                <li><a href="#">Na escola</a></li>
+                <li><a href="#">Locais</a></li>
+                <li><a href="#">Sobre</a></li>
+             </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>HeiTor
+        <br>
+                    <span> Assim é</span>
+                </h2>
+        <br>
+                <p>Tem origem no grego Héktor, a partir da raiz ekhein, que quer dizer “possuo, tenho em meu poder”.
+                    Desta forma, o nome tem o sentido de "aquele que guarda" ou "aquele que possui". 
+                    
+                </p>
+        <br>
+                <a class="saiba" href="#">Saiba mais</a>
+            </div>
+            <div class="imgBox">
+                <img class="praia" src="https://i.imgur.com/BBHsHLK.png" >
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="https://i.imgur.com/uVu130r.png" onclick="imgSlider('https://i.imgur.com/uVu130r.png') ; changeBgColor('#6e7374')"></li>
+            <li><img src="https://i.imgur.com/2TJPmMv.png" onclick="imgSlider('https://i.imgur.com/2TJPmMv.png') ; changeBgColor('#e60c2c')"></li>
+            <li><img src="https://i.imgur.com/yiBGMFY.png" onclick="imgSlider('https://i.imgur.com/yiBGMFY.png') ; changeBgColor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.youtube.com/channel/UCt5rFKAyZHcaYVriXBpC97Q"><img src="https://i.imgur.com/OvASb63.png"></a></li>
+            <li><a href="https://www.facebook.com/andreo.b.aob/"><img src="https://i.imgur.com/enutHgw.png"></a></li>
+            <li><a href="https://www.instagram.com/andreobernardo/"><img src="https://i.imgur.com/DfMH0KF.png"></a></li>
+        </ul>
+    </section>
+    
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.praia').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+
+</body>
+</html>
